@@ -6,10 +6,10 @@
         display: grid;
         width: 100%;
         grid-template-columns: auto;
-        grid-template-rows: 70px 40px auto 55px;
+        grid-template-rows: 10px 40px auto 55px;
         grid-template-areas: 
-        "header header header header header header"
         "nav nav nav nav nav nav"
+        "header header header header header header"
         "main main main main main main"
         "footer footer footer footer footer footer";
     }
@@ -23,8 +23,9 @@
         font-size: 17px;
     }
 
-    header h1 {
+    h1 {
         margin: 20px 0 0 0;
+        text-align: center;
     }
 
     .nav {
