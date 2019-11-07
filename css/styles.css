@@ -31,14 +31,14 @@
     .nav {
         display: flex;
         grid-area: nav;
-        margin: 20px 1em -30px 1em;
-        border-radius: 20px;;
+        margin: 20px -10px -30px -10px;
+        background-color: gray;
+        width: 110%;
     }
 
     .nav ul {
         display: flex;
         list-style-type: none;
-        padding: 0;
     }
 
     .nav ul a {
@@ -46,6 +46,16 @@
         padding: 5px;
         padding: 5px 15px;
         border-radius: 15px;
+        color: white;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: gray;
+        padding: 15px 39px;
+        margin: 0;
     }
     
     /* Content */
