@@ -20,21 +20,45 @@ var sticky = nav.offsetTop - 15;
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
-    nav.classList.add("sticky");
+    nav.classList.add('sticky');
   } else {
-    nav.classList.remove("sticky");
+    nav.classList.remove('sticky');
   }
 }
 
-function test () {
-  console.log('hello');
+function toggle1 () {
+  section1.classList.add('nav-click');
+  section2.classList.remove('nav-click');
+  section3.classList.remove('nav-click');
+  section4.classList.remove('nav-click');
+}
+
+function toggle2 () {
+  section2.classList.add('nav-click');
+  section1.classList.remove('nav-click');
+  section3.classList.remove('nav-click');
+  section4.classList.remove('nav-click');
+}
+
+function toggle3 () {
+  section3.classList.add('nav-click');
+  section1.classList.remove('nav-click');
+  section2.classList.remove('nav-click');
+  section4.classList.remove('nav-click');
+}
+
+function toggle4 () {
+  section4.classList.add('nav-click');
+  section1.classList.remove('nav-click');
+  section2.classList.remove('nav-click');
+  section3.classList.remove('nav-click');
 }
 
 var section1 = document.querySelector('.section1');
 var section2 = document.querySelector('.section2');
 var section3 = document.querySelector('.section3');
 var section4 = document.querySelector('.section4');
-section1.addEventListener('click', test);
-section2.addEventListener('click', test);
-section3.addEventListener('click', test);
-section4.addEventListener('click', test);
+section1.addEventListener('click', toggle1);
+section2.addEventListener('click', toggle2);
+section3.addEventListener('click', toggle3);
+section4.addEventListener('click', toggle4);

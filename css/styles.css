@@ -6,7 +6,7 @@
         display: grid;
         width: 100%;
         grid-template-columns: auto;
-        grid-template-rows: 10px 40px auto 55px;
+        grid-template-rows: 10px 40px auto 150px;
         grid-template-areas: 
         "nav nav nav nav nav nav"
         "header header header header header header"
@@ -24,8 +24,9 @@
     }
 
     h1 {
-        margin: 20px 0 0 0;
+        margin: 30px 0 0 0;
         text-align: center;
+        font-size: 45px;
     }
 
     .nav {
@@ -57,6 +58,10 @@
         padding: 15px 39px;
         margin: 0;
     }
+
+    .nav-click {
+        background-color: lightgray;
+    }
     
     /* Content */
 
@@ -70,6 +75,17 @@
     a {
         text-decoration: none;
         color: black;
+        font-size: 17.5px;
+    }
+
+    h4 {
+        font-size: 30px;
+        margin: 75px 0 0 0;
+    }
+
+    section {
+        font-size: 23px;
+        margin: 20px 60px 40px 60px;
     }
 
     .landing__container {
