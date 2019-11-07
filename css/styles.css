@@ -6,7 +6,7 @@
         display: grid;
         width: 100%;
         grid-template-columns: auto;
-        grid-template-rows: 10px 40px auto 150px;
+        grid-template-rows: 10px 40px auto 215px;
         grid-template-areas: 
         "nav nav nav nav nav nav"
         "header header header header header header"

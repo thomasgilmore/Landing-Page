@@ -14,11 +14,11 @@ for(var i = 0; i <= 3; i++)
     li.appendChild(a);
 }
 
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {stickyNav()};
 
 var sticky = nav.offsetTop - 15;
 
-function myFunction() {
+function stickyNav() {
   if (window.pageYOffset >= sticky) {
     nav.classList.add('sticky');
   } else {
@@ -62,3 +62,35 @@ section1.addEventListener('click', toggle1);
 section2.addEventListener('click', toggle2);
 section3.addEventListener('click', toggle3);
 section4.addEventListener('click', toggle4);
+
+const sections = document.querySelectorAll('.section');
+
+function checkScroll(e) {
+  sections.forEach(sections => {
+    const activeClass = window.scrollY;
+    console.log(activeClass);
+    if (activeClass >= 188 && activeClass < 650) {
+      section1.classList.add('nav-click');
+      section2.classList.remove('nav-click');
+      section3.classList.remove('nav-click');
+      section4.classList.remove('nav-click');
+    } else if (activeClass >= 650 && activeClass < 1076) {
+      section1.classList.remove('nav-click');
+      section2.classList.add('nav-click');
+      section3.classList.remove('nav-click');
+      section4.classList.remove('nav-click');
+    } else if (activeClass >= 1076 && activeClass < 1576) {
+      section1.classList.remove('nav-click');
+      section2.classList.remove('nav-click');
+      section3.classList.add('nav-click');
+      section4.classList.remove('nav-click');
+    } else if (activeClass >= 1576) {
+      section1.classList.remove('nav-click');
+      section2.classList.remove('nav-click');
+      section3.classList.remove('nav-click');
+      section4.classList.add('nav-click');
+    } 
+  });
+}
+
+window.addEventListener('scroll', checkScroll);
