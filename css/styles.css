@@ -32,6 +32,110 @@
     .nav {
         display: flex;
         grid-area: nav;
+        margin: 20px -10px -30px -47px;
+        background-color: gray;
+        width: 130%
+    }
+
+    .nav ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .nav ul a {
+        margin: 15px 5px 15px 5px;
+        padding: 5px;
+        padding: 5px;
+        border-radius: 15px;
+        color: white;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: gray;
+        padding: 15px 39px;
+        margin: 0;
+    }
+
+    .nav-click {
+        background-color: lightgray;
+    }
+    
+    /* Content */
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        grid-area: main;
+        margin: 30px 0 0 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 17.5px;
+    }
+
+    h4 {
+        font-size: 30px;
+        margin: 75px 0 0 0;
+    }
+
+    section {
+        font-size: 23px;
+        margin: 10px 5px 10px 5px;
+    }
+
+    .landing__container {
+        margin: 0 0.5em 0 0.5em;
+        text-align: left;
+    }
+
+    /* Footer */
+    
+    .footer {
+        display: flex;
+        grid-area: footer;
+        align-items: flex-end;
+        margin: 0 0 0 1.5em;
+    }
+
+}
+
+@media(min-width: 600px) and (max-width: 900px) {
+    
+    .container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto;
+        grid-template-rows: 10px 40px auto 215px;
+        grid-template-areas: 
+        "nav nav nav nav nav nav"
+        "header header header header header header"
+        "main main main main main main"
+        "footer footer footer footer footer footer";
+    }
+
+    /* Header */
+
+    .header {
+        display: flex;
+        grid-area: header;
+        justify-content: center;
+        font-size: 17px;
+    }
+
+    h1 {
+        margin: 30px 0 0 0;
+        text-align: center;
+        font-size: 45px;
+    }
+
+    .nav {
+        display: flex;
+        grid-area: nav;
         margin: 20px -10px -30px -10px;
         background-color: gray;
         width: 110%;
@@ -101,13 +205,107 @@
         align-items: flex-end;
         margin: 0 0 0 1.5em;
     }
-
-}
-
-@media(min-width: 600px) and (max-width: 900px) {
-
 }
 
 @media(min-width: 901px) {
 
+    .container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto;
+        grid-template-rows: 10px 40px auto 215px;
+        grid-template-areas: 
+        "nav nav nav nav nav nav"
+        "header header header header header header"
+        "main main main main main main"
+        "footer footer footer footer footer footer";
+    }
+
+    /* Header */
+
+    .header {
+        display: flex;
+        grid-area: header;
+        justify-content: center;
+        font-size: 17px;
+    }
+
+    h1 {
+        margin: 30px 0 0 0;
+        text-align: center;
+        font-size: 45px;
+    }
+
+    .nav {
+        display: flex;
+        grid-area: nav;
+        margin: 20px -10px -30px -10px;
+        background-color: gray;
+        width: 110%;
+    }
+
+    .nav ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .nav ul a {
+        margin: 15px 15px 15px 1.5em;
+        padding: 5px;
+        padding: 5px 15px;
+        border-radius: 15px;
+        color: white;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: gray;
+        padding: 15px 39px;
+        margin: 0;
+    }
+
+    .nav-click {
+        background-color: lightgray;
+    }
+    
+    /* Content */
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        grid-area: main;
+        margin: 30px 0 0 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 17.5px;
+    }
+
+    h4 {
+        font-size: 30px;
+        margin: 75px 0 0 0;
+    }
+
+    section {
+        font-size: 23px;
+        margin: 20px 60px 40px 60px;
+    }
+
+    .landing__container {
+        margin: 0 1.5em 0 1.5em;
+        text-align: left;
+    }
+
+    /* Footer */
+    
+    .footer {
+        display: flex;
+        grid-area: footer;
+        align-items: flex-end;
+        margin: 0 0 0 1.5em;
+    }
 }
